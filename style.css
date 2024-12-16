@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f5f5f5;
+  padding: 16px 32px;
+}
+
+.mi-logo {
+  display: flex;
+  align-items: center;
+}
+
+.mi-logo p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #464646;
+  padding-left: 5px;
+}
+
+.enlaces-container {
+  display: flex;
+  justify-content: space-around;
+  width: 700px;
+}
+
+.enlaces-container a {
+  text-decoration: none;
+  color: #464646;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.enlaces-container a:nth-child(6) {
+  font-weight: 700;
+}
+
+.seccion1-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: content-box;
+  height: 450px;
+  background-color: #f5f5f5;
+  padding-bottom: 80px;
+}
+
+.seccion-1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 50px;
+}
+
+.seccion-1 h1 {
+  font-size: 3.25rem;
+  color: #464646;
+  padding-top: 60px;
+}
+
+.seccion-1 p {
+  padding-top: 20px;
+  font-size: 1.375rem;
+  color: #464646;
+}
+
+.links-container {
+  padding-top: 20px;
+}
+
+.links-container a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #464646;
+}
+
+.perfil-container {
+  width: 370px;
+  height: 370px;
+  box-sizing: border-box;
+}
+
+.perfil-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.seccion2-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eaf2fd;
+  width: 100%;
+  height: 100%;
+  padding: 40px 0px;
+}
+
+.seccion-sobremi {
+  display: flex;
+  flex-direction: column;
+  padding: 80px 0;
+}
+
+.seccion-sobremi h2 {
+  font-size: 2rem;
+  color: #464646;
+}
+
+.seccion-sobremi p {
+  font-size: 1rem;
+  color: #464646;
+  padding-top: 30px;
+}
+
+/* Responsividad */
+@media (max-width: 884px) {
+  .enlaces-container {
+    display: none;
+  }
+  .mi-logo {
+    position: relative;
+    left: 5px;
+  }
+  .mi-logo p {
+    padding-left: 10px;
+  }
+  .seccion1-container {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    padding: 0px 50px 140px 50px;
+    background-color: #f5f5f5;
+  }
+  .seccion-1 {
+    order: 2;
+  }
+  .seccion-1 h1 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    color: #464646;
+    padding-top: 60px;
+  }
+  .seccion-1 p {
+    padding-top: 20px;
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #464646;
+  }
+  .perfil-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: 1;
+  }
+  .perfil-container img {
+    width: 268px;
+    height: 268px;
+  }
+  .seccion2-container {
+    display: flex;
+    padding-top: 80px;
+    background-color: #eaf2fd;
+    width: 100%;
+    height: 367px;
+  }
+  .seccion-sobremi {
+    padding-left: 50px;
+    padding-top: 40px;
+  }
+  .seccion-sobremi p {
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  nav {
+    display: flex;
+    background-color: #f5f5f5;
+    padding: 15px;
+  }
+  .mi-logo {
+    position: absolute;
+    left: 10px;
+    display: grid;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  .mi-logo p {
+    position: absolute;
+    left: 25px;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #464646;
+    padding-left: 5px;
+    padding-top: 3px;
+  }
+
+  .enlaces-container {
+    position: relative;
+    box-sizing: border-box;
+    width: 200px;
+  }
+  .enlaces-container a {
+    text-decoration: none;
+    color: #464646;
+    font-weight: 500;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+  }
+  .enlaces-container a:nth-child(1) {
+    display: none;
+  }
+  .enlaces-container a:nth-child(2) {
+    display: none;
+  }
+  .enlaces-container a:nth-child(3) {
+    display: none;
+  }
+  .enlaces-container a:nth-child(4) {
+    display: none;
+  }
+  .enlaces-container a:nth-child(5) {
+    display: none;
+  }
+  .enlaces-container a:nth-child(6) {
+    padding-left: 120px;
+    padding-top: 2px;
+  }
+
+  .perfil-container {
+    position: absolute;
+    left: 70px;
+    top: 70px;
+    width: 270px;
+    height: 270px;
+    box-sizing: border-box;
+  }
+  .perfil-container img {
+    box-sizing: border-box;
+    width: 268px;
+    height: 268px;
+    border-radius: 200px;
+  }
+
+  .seccion1-container {
+    height: 780px;
+    padding-left: 30px;
+    padding-right: 20px;
+    background-color: #f5f5f5;
+    padding-bottom: 80px;
+  }
+  .seccion-1 {
+    padding-top: 200px;
+  }
+  .seccion2-container {
+    display: flex;
+    background-color: #eaf2fd;
+    width: 100%;
+    height: 480px;
+  }
+  .seccion-sobremi {
+    padding-left: 30px;
+    padding-top: 40px;
+  }
+  .seccion-sobremi p {
+    padding-right: 30px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  nav {
+    padding: 10px;
+  }
+  .mi-logo p {
+    font-size: 1rem;
+  }
+  .enlaces-container {
+    display: none;
+  }
+  .perfil-container {
+    position: absolute;
+    left: 55px;
+    top: 70px;
+    width: 270px;
+    height: 270px;
+  }
+  .seccion1-container {
+    height: 780px;
+  }
+  .seccion-1 h1 {
+    font-size: 2.5rem;
+  }
+  .seccion2-container {
+    height: 480px;
+  }
+  .seccion-sobremi {
+    padding-left: 30px;
+    padding-top: 40px;
+  }
+}
